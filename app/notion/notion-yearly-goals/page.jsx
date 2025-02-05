@@ -173,6 +173,7 @@ const NotionTemplatePage = () => {
               <CardContent className='mt-5'>
                 <Button asChild className='w-full'>
                     <Link
+                      target='_blank'
                       href='https://unmarred-quarter-034.notion.site/Yearly-Goals-17ca50b66d728001b8cae2f487af98eb?pvs=4'
                     >
                       Use This Template!

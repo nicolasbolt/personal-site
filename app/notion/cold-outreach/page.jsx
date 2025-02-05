@@ -174,6 +174,7 @@ const NotionTemplatePage = () => {
               <CardContent className='mt-5'>
                 <Button asChild className='w-full'>
                     <Link
+                        target='_blank'
                       href='https://unmarred-quarter-034.notion.site/Cold-Outreach-CRM-183a50b66d7280649c38df0f42cc0e6f?pvs=4'
                     >
                       Use This Template!

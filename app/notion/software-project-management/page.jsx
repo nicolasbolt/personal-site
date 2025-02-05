@@ -174,6 +174,7 @@ const NotionTemplatePage = () => {
               <CardContent className='mt-5'>
                 <Button asChild className='w-full'>
                     <Link
+                        target='_blank'
                       href='https://unmarred-quarter-034.notion.site/Software-Project-Management-17ca50b66d7280cbb758ce8cf2f93009?pvs=4'
                     >
                       Use This Template!
