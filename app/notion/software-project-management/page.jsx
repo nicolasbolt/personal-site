@@ -45,7 +45,7 @@ const NotionTemplatePage = () => {
 
         <div className='space-y-4 md:space-y-0 space-x-4'>
           <Button asChild>
-            <Link target='_blank' href='#'> Get the Template!</Link>
+            <Link target='_blank' href='https://unmarred-quarter-034.notion.site/Software-Project-Management-17ca50b66d7280cbb758ce8cf2f93009?pvs=4'> Get the Template!</Link>
           </Button>
         </div>
       </div>
@@ -174,7 +174,7 @@ const NotionTemplatePage = () => {
               <CardContent className='mt-5'>
                 <Button asChild className='w-full'>
                     <Link
-                      href={``}
+                      href='https://unmarred-quarter-034.notion.site/Software-Project-Management-17ca50b66d7280cbb758ce8cf2f93009?pvs=4'
                     >
                       Use This Template!
                     </Link>
