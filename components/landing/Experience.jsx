@@ -22,6 +22,7 @@ const features = [
 
 const Experience = () => {
   return (
+    <div className='md:px-0 px-3'>
     <section id='howItWorks' className='container text-center py-24 sm:py-32 mx-auto'>
       <h2 className='text-3xl md:text-4xl font-bold '>
         What <span className='bg-clip-text'>I've Done</span>
@@ -42,6 +43,7 @@ const Experience = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

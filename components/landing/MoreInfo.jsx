@@ -2,7 +2,7 @@ import React from 'react'
 
 const MoreInfo = () => {
     return (
-      <div className='bg-slate-50'>
+      <div className='bg-slate-50 md:px-0 px-3'>
       <section id='problem' className='container py-24 sm:py-32 mx-auto'>
         <div className='bg-white border rounded-lg py-12'>
           <div className='px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12'>

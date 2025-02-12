@@ -25,7 +25,7 @@ const Hero = () => {
           I have been solving problems with software for 5 years.  I have professional experience with Python and Javascript.
         </p>
 
-        <div className='space-y-4 md:space-y-0 space-x-4'>
+        <div className='space-y-4 md:space-y-0 md:space-x-4'>
           <Button asChild>
             <Link target='_blank' href='https://www.linkedin.com/in/nicolas-bolt-59a523131/'><ion-icon name="logo-linkedin"></ion-icon> My LinkedIn Profile</Link>
           </Button>

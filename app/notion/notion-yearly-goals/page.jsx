@@ -63,8 +63,7 @@ const NotionTemplatePage = () => {
       <div className='shadow'></div>
     </section>
 
-      <section>
-              <div className='bg-slate-50'>
+      <section className='bg-slate-50 md:px-0 px-3'>
               <div id='problem' className='container py-24 sm:py-32 mx-auto'>
                 <div className='bg-white border rounded-lg py-12'>
                   <div className='px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12'>
@@ -111,10 +110,9 @@ const NotionTemplatePage = () => {
                   </div>
                 </div>
               </div>
-            </div>
       </section>
         
-      <section>
+      <section className='md:px-0 px-3'>
         {/* solution */}
 
     <div className='container py-24 sm:py-32 mx-auto'>
@@ -157,8 +155,7 @@ const NotionTemplatePage = () => {
     </div>
 
 </section>
-<section>
-      <div className='bg-slate-50'>
+<section className='bg-slate-50 md:px-0 px-3'>
       <div id='cta' className='container py-24 sm:py-32 mx-auto'>
         <div className='gap-8 mx-auto md:w-4/12'>
             <Card
@@ -195,7 +192,6 @@ const NotionTemplatePage = () => {
             </Card>
         </div>
       </div>
-    </div>
       </section>
 
     </main>
