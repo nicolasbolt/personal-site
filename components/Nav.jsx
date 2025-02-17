@@ -59,6 +59,12 @@ export default function PublicNav() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <NavigationMenuLink
+                  href='/about'
+                  className={navigationMenuTriggerStyle()}
+                >
+                  About
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

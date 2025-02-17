@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, buttonVariants } from '../ui/button'
 import Link from 'next/link'
+import { Speech } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -22,18 +23,18 @@ const Hero = () => {
         </main>
 
         <p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0'>
-          I have been solving problems with software for 5 years.  I have professional experience with Python and Javascript.
+          I have been solving problems with software for 5 years.  I work with individuals and companies to solve challenges with software and acheive business results.
         </p>
 
-        <div className='space-y-4 md:space-y-0 md:space-x-4'>
-          <Button asChild>
-            <Link target='_blank' href='https://www.linkedin.com/in/nicolas-bolt-59a523131/'><ion-icon name="logo-linkedin"></ion-icon> My LinkedIn Profile</Link>
+        <div className='space-y-4 md:space-y-0 space-x-4'>
+          <Button asChild size="lg">
+            <Link target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLScO0hCwTeIMUY7MlAf3K74_UZ7DCI8lqHNy_syXOAGACE4zbg/viewform?usp=dialog'><Speech /> Work With Me</Link>
           </Button>
 
-          <Button variant='outline'>
+          {/* <Button variant='outline'>
           <Link target='_blank' href='https://github.com/nicolasbolt'><ion-icon name="logo-github"></ion-icon> My Code on Github</Link>
             
-          </Button>
+          </Button> */}
         </div>
       </div>
 

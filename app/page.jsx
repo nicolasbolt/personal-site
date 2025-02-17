@@ -1,20 +1,22 @@
 import React from 'react'
 import Hero from '@/components/landing/Hero'
-import InfoBar from '@/components/landing/InfoBar'
-import MoreInfo from '@/components/landing/MoreInfo'
-import Experience from '@/components/landing/Experience'
+import Skills from '@/components/landing/Skills'
+import ProblemAgitation from '@/components/landing/ProblemAgitation'
+import Solution from '@/components/landing/Solution'
+import Features from '@/components/landing/Features'
 import About from '@/components/landing/About'
-import Projects from '@/components/landing/Projects'
-
+import CTA from '@/components/landing/CTA'
 const LandingPage = () => {
   return (
     <>
       <Hero />
-      <InfoBar />
-      <MoreInfo />
-      <Experience />
-      <Projects />
+      <Skills />
+      <ProblemAgitation />
+      <Solution />
+      <Features />
       <About />
+      <CTA />
+      {/* <FAQ /> */}
     </>
   )
 }

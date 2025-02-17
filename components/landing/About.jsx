@@ -26,12 +26,13 @@ const teamList = [
       // },
     ],
     content: [
-        `As a software engineer with four years of experience, I specialize in building scalable and efficient software solutions using Python, JavaScript, and AWS.`,
-        `My expertise spans both front-end development with React and Next.js and back-end development with Node.js and Python.`,
-        `I hold the AWS Certified Cloud Practitioner certification and have a strong background in designing secure, high-performing cloud architectures using services like Lambda, API Gateway, and S3.`,
-        `From small-scale solutions to enterprise-level systems, I’ve successfully collaborated with cross-functional teams to develop and deploy applications that meet real-world needs.`,
-        `I’m passionate about creating seamless experiences and ensuring every application is built to scale.`,
-        `Whether it’s crafting efficient code or optimizing cloud infrastructure, I’m always focused on delivering reliable solutions that perform at their best.`,
+        `I have been solving tech and IT problems for over 5 years.`,
+        `I understand how difficult and confusing it can be to handle digital marketing, web development, and IT issues while also trying to run a business.`,
+        `I have built many websites for clients who have had this same problem.`,
+        `This website is a great example of what I can do for you.`,
+        `I can create a web interface that is easy to navigate and understand.`,
+        `I can create website copy that creates an emotional connection with your audience, convinces them with logic, and builds trust.`,
+        `Let me handle your website so you can focus on running your business.`,
       ],
   },
 ];
@@ -112,4 +113,3 @@ const About = () => {
 };
 
 export default About;
-
