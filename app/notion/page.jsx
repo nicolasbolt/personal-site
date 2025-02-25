@@ -33,7 +33,7 @@ const cardData = [
 
 const Notion = () => {
 return (
-    <div className='grid md:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mb-0 mb-4'>
+    <div className='grid md:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mb-0 pb-4'>
         {cardData.map((card, index) => (
             <Card key={index}>
                 <CardHeader>
