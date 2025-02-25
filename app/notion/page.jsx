@@ -22,6 +22,12 @@ const cardData = [
         title: 'Cold Outreach',
         content: 'This template is designed to help you with your cold outreach efforts. It includes sections for contact information, outreach scripts, follow-up schedules, and tracking responses to ensure you can effectively manage your outreach campaigns.',
         href: '/notion/cold-outreach'
+    },
+    {
+        image: '/content-planner.png',
+        title: 'Content Planner',
+        content: 'Manage your process for creating content better with this template.  It gives you a process for determining your positioning, handling daily tasks, planning for the week and planning out months in advance.',
+        href: '/notion/content-planner'
     }
 ];
 
