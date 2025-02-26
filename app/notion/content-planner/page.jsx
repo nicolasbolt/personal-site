@@ -45,7 +45,7 @@ const ContentPlanner = () => {
 
         <div className='space-y-4 md:space-y-0 space-x-4'>
           <Button asChild>
-            <Link target='_blank' href='https://unmarred-quarter-034.notion.site/Yearly-Goals-17ca50b66d728001b8cae2f487af98eb?pvs=4'> Get the Template!</Link>
+            <Link target='_blank' href='https://unmarred-quarter-034.notion.site/Content-Planner-19ea50b66d7280c8a57ddcb9ba724d39?pvs=4'> Get the Template!</Link>
           </Button>
         </div>
       </div>
@@ -172,7 +172,7 @@ const ContentPlanner = () => {
                 <Button asChild className='w-full'>
                     <Link
                       target='_blank'
-                      href='https://unmarred-quarter-034.notion.site/Yearly-Goals-17ca50b66d728001b8cae2f487af98eb?pvs=4'
+                      href='https://unmarred-quarter-034.notion.site/Content-Planner-19ea50b66d7280c8a57ddcb9ba724d39?pvs=4'
                     >
                       Use This Template!
                     </Link>
