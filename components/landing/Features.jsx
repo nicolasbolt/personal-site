@@ -3,17 +3,17 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 const featureList = [
   {
     title: 'Custom Landing Page',
-    description: 'Have a product that you need to sell?  I can build you a custom high converting landing page to turn website visitors into customers.',
+    description: 'Have a product that you need to sell?  You need a high performing landing page to make those sales!',
     icon: '/undraw_building-blocks.svg',
   },
   {
     title: 'Custom Internal Software',
-    description: 'Do you have boring repetitive tasks that you wish you could remove?  I can build you custom software solutions to automate workflows.',
+    description: 'Replace your manual processes with custom software solutions.  Automate your business processes to save time and money.',
     icon: '/undraw_dream-world.svg',
   },
   {
     title: 'Technical SEO Optimization',
-    description: 'Do you have your meta tags, robots.txt, canonical links, and other SEO elements in place?  I can help you optimize your website for search engines.',
+    description: 'Do you have your meta tags, robots.txt, canonical links, and other SEO elements in place?  If you get these right, you can rank higher in search engines.',
     icon: '/undraw_design-components.svg',
   },
   
@@ -31,10 +31,6 @@ const Features = () => {
             </span>
             You Results
           </h2>
-
-          {/* <p className='text-muted-foreground text-xl mt-4 mb-8 '>
-          Receive real-time corrections, practice practical scenarios, and enjoy conversations that adapt to your skill level for a truly personalized language learning experience.
-          </p> */}
 
           <div className='flex flex-col gap-8'>
             {featureList.map(({ title, description, icon }) => (

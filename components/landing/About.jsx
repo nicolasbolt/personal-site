@@ -2,7 +2,6 @@ import { buttonVariants } from '@/components/ui/button';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -14,7 +13,6 @@ const teamList = [
     imageUrl:
       'https://res.cloudinary.com/douwvycai/image/upload/f_auto,q_auto/q0nosbkix2z9xfkqwajc',
     name: 'Nick Bolt',
-    // position: 'FluentBurst Founder',
     socialNetworks: [
       {
         name: 'Linkedin',

@@ -23,7 +23,7 @@ const Hero = () => {
         </main>
 
         <p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0'>
-          I have been solving problems with software for 5 years.  I work with individuals and companies to solve challenges with software and acheive business results.
+          I have been solving problems with software for 5 years.  I work with companies to solve challenges with software and acheive business results.
         </p>
 
         <div className='space-y-4 md:space-y-0 space-x-4'>

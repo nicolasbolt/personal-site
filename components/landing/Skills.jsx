@@ -11,7 +11,7 @@ const sponsors = [
     },
     {
       icon: <ion-icon size='large' name="pencil-outline"></ion-icon>,
-      name: 'Copywriting',
+      name: 'Backend Web Development',
     },
     {
       icon: <ion-icon size='large' name="layers-outline"></ion-icon>,

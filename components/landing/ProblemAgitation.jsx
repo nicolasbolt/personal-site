@@ -14,11 +14,10 @@ const MoreInfo = () => {
             <div className='bg-green-0 flex flex-col justify-between md:w-8/12'>
               <div className='pb-6'>
                 <h2 className='text-3xl md:text-4xl font-bold'>
-                  <span className='bg-clip-text'>Software is Hard </span>
-                  And Maintainance Is Even Harder!
+                  <span className='bg-clip-text'>Software is Hard! </span>
                 </h2>
                 <p className='text-xl text-muted-foreground mt-4'>
-                  Handling your own IT and tech needs is a nightmare.  The countless headaches and hours spent figuring it all out could be better spent on your business.
+                  Stop doing manual tasks that could be automated. Make your digital presence actually lead to more customers.
                 </p>
               </div>
 
@@ -34,7 +33,7 @@ const MoreInfo = () => {
                     <h2 className='text-3xl sm:text-4xl font-bold '>
                       Countless
                     </h2>
-                    <p className='text-xl text-muted-foreground'>Hours Spent Dealing With Your Website</p>
+                    <p className='text-xl text-muted-foreground'>Hours Spent Doing Manual Work</p>
                   </div>
                   <div className='space-y-2 text-center'>
                     <h2 className='text-3xl sm:text-4xl font-bold '>

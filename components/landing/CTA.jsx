@@ -32,7 +32,6 @@ const pricingList = [
       // stripe live price id
         : '',
     description: 'Improve your conversion rate and get more leads to turn visitors into customers!',
-    buttonText: 'Get Started For Free',
     benefitList: [
       'A proven structure that converts',
       'Good website copy to convince your audience',
@@ -57,7 +56,6 @@ const pricingList = [
       // stripe live price id
         : '',
     description: 'I can build you a custom SaaS solution for either your internal team or to sell to customers.',
-    buttonText: 'Get Started For Free',
     benefitList: [
       'Automate repetitive tasks',
       'Team collaboration',
@@ -65,7 +63,7 @@ const pricingList = [
     ],
   },
   {
-    title: 'Optimizations on Existing Software',
+    title: 'Hire Me',
     recommended: false,
     duration: 'year',
     price: 200,
@@ -81,8 +79,7 @@ const pricingList = [
         ? ''
       // stripe live price id
         : '',
-    description: 'I can help you optimize your existing software to make it more efficient and user friendly.',
-    buttonText: 'Get Started For Free',
+    description: 'Do you need something more specific? Let me help you solve your problems!',
     benefitList: [
       'SEO optimization',
       'User experience improvements',
