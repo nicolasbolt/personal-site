@@ -26,7 +26,7 @@ const Solution = () => {
       </h2>
       <p className='md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground'></p>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='md:w-full w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {benefits.map(({ title, description, icon }) => (
           <Card key={title} className='bg-muted/50'>
             <CardHeader>

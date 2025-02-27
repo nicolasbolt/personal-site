@@ -14,11 +14,11 @@ const features = [
     description: 'A marketing landing page with a proven structure to convert visitors into customers.',
     href: 'https://marketing.nicolasbolt.com'
   },
-//   {
-//     image: '',
-//     title: 'Notion Blog CMS Package',
-//     description: 'A package using the Notion API to use a Notion database as a CMS for a Next.js blog.  Includes a ContentRenderer to render Notion content as JSX.',
-//   },
+  {
+    image: '/signin-page.png',
+    title: 'SaaS Starter App Template',
+    description: 'Kickstart your SaaS project with this starter app template. It includes essential features to help you build and scale your application quickly.',
+  },
 //   {
 //     image: '',
 //     title: 'Marketing Website Boilerplate Code - Next.js',

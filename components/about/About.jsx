@@ -60,7 +60,7 @@ const About = () => {
         dolor pariatur sit! */}
       </p>
 
-      <div className='md:w-5/12 w-full mx-auto gap-8 gap-y-10 pt-10'>
+      <div className='md:w-5/12 w-11/12 mx-auto gap-8 gap-y-10 pt-10'>
         {teamList.map(
           ({ imageUrl, name, socialNetworks, content }) => (
             <Card

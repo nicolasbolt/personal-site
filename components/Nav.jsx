@@ -55,6 +55,7 @@ export default function PublicNav() {
                     </li>
                     <ListItem href='/notion' title='Notion Templates'>Notion Templates to better organize your language learning!</ListItem>
                     <ListItem href='/marketing-boilerplate' title='Marketing Boilerplate'>Marketing landing page to better sell your products</ListItem>
+                    <ListItem href='/saas-starter-app' title='SaaS Starter App'>A SaaS starter app to quickly launch complete products</ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>

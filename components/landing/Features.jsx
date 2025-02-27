@@ -23,7 +23,7 @@ const Features = () => {
   return (
     <section id='features' className='bg-slate-50'>
     <div className='container py-24 sm:py-32 mx-auto'>
-      <div className='grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center'>
+      <div className='w-11/12 md:w-full mx-auto grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center'>
         <div>
           <h2 className='text-3xl md:text-4xl font-bold pb-5'>
             <span className='bg-clip-text'>

@@ -4,7 +4,7 @@ const MoreInfo = () => {
     return (
       <div className='bg-slate-50'>
       <section id='problem' className='container py-24 sm:py-32 mx-auto'>
-        <div className='bg-white border rounded-lg py-12'>
+        <div className='bg-white border rounded-lg py-12 md:w-full w-11/12 mx-auto'>
           <div className='px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12'>
             <img
               src='/undraw_code-review.svg'
