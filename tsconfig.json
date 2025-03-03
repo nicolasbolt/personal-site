@@ -36,7 +36,7 @@
     "app/page.jsx",
     "next-env.d.ts",
     "dist/types/**/*.ts"
-  ],
+, "app/saas-starter-app/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
