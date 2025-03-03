@@ -28,6 +28,12 @@ const cardData = [
         title: 'Content Planner',
         content: 'Manage your process for creating content better with this template.  It gives you a process for determining your positioning, handling daily tasks, planning for the week and planning out months in advance.',
         href: '/notion/content-planner'
+    },
+    {
+        image: '/language-learning-cover.png',
+        title: 'Language Learning',
+        content: 'Easily organize your learning across multiple languages and track your progress with ease. Use this template to master a new language with this comprehensive language learning template.',
+        href: '/notion/language-learning'
     }
 ];
 
