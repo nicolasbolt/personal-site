@@ -9,6 +9,9 @@ jobs:
     uses: nicolasbolt/github-templates/.github/workflows/node-build.yml@main
     with:
       node-version: '20'
+      upload-artifacts: true
+      artifact-name: 'build-output'
+      artifact-path: 'dist/'
 
   # test:
   #   needs: build
@@ -16,14 +19,16 @@ jobs:
   #   with:
   #     node-version: '20'
   #     test-command: 'npm test'
-
+  #     use-build-artifacts: true
+  #     artifact-name: 'build-output'
+  #     artifact-path: 'dist/'
+  
   deploy:
-    needs: build  # Change to 'test' if you enable the test job
+    # needs: [build, test] # Uncomment if test job is enabled
+    needs: build
     uses: nicolasbolt/github-templates/.github/workflows/digital-ocean-deploy.yml@main
     with:
-      node-version: '20'
       source-path: 'dist/'
-      build-command: 'npm run build'
     secrets:
       DO_HOST: ${{ secrets.DO_HOST }}
       DO_USERNAME: ${{ secrets.DO_USERNAME }}
