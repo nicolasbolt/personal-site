@@ -6,20 +6,20 @@ on:
 
 jobs:
   build:
-    uses: nicolasbolt/github-templates/.github/workflows/templates/node-build.yml@main
+    uses: nicolasbolt/github-templates/.github/workflows/node-build.yml@main
     with:
       node-version: '20'
 
   # test:
   #   needs: build
-  #   uses: nicolasbolt/github-templates/.github/workflows/templates/node-test.yml@main
+  #   uses: nicolasbolt/github-templates/.github/workflows/node-test.yml@main
   #   with:
   #     node-version: '20'
   #     test-command: 'npm test'
 
   deploy:
     needs: build  # Change to 'test' if you enable the test job
-    uses: nicolasbolt/github-templates/.github/workflows/templates/digital-ocean-deploy.yml@main
+    uses: nicolasbolt/github-templates/.github/workflows/digital-ocean-deploy.yml@main
     with:
       node-version: '20'
       source-path: 'dist/'
