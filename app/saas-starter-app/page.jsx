@@ -3,6 +3,29 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "SaaS Starter App Template",
+  description: "Launch your SaaS in days with this SaaS starter app template.",
+  keywords: "saas, entrepreneurship, mongodb, stripe",
+  openGraph: {
+    title: "SaaS Starter App Template",
+    description: "Launch your SaaS in days with this SaaS starter app template.",
+    type: "website",
+    url: "https://www.nicolasbolt.com/saas-starter-app",
+    images: [
+      {
+        url: "https://www.nicolasbolt.com/og-saas.svg",
+        width: 1200,
+        height: 630,
+        alt: "SaaS Starter App Social Image",
+      },
+    ],
+  },
+  alternates: {
+    canonical: './',
+  },
+};
+
 const featuresList = [
   {
     title: 'User Management',

@@ -3,6 +3,29 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/componen
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+export const metadata = {
+    title: "Notion Templates",
+    description: "Systemtize your life and business and get more done with these Notion templates.",
+    keywords: "notion, productivity, templates",
+    openGraph: {
+      title: "Notion Templates",
+      description: "Systemtize your life and business and get more done with these Notion templates.",
+      type: "website",
+      url: "https://www.nicolasbolt.com/notion",
+      images: [
+        {
+          url: "https://www.nicolasbolt.com/og-notion.svg",
+          width: 1200,
+          height: 630,
+          alt: "Notion Templates Social Image",
+        },
+      ],
+    },
+    alternates: {
+      canonical: './',
+    },
+  };
+
 const cardData = [
     {
         image: '/notion.png',

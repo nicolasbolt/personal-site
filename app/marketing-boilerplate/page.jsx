@@ -3,6 +3,29 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Marketing Landing Page Template",
+  description: "Easily convert visitors into customers with this marketing boilerplate page.  Take the visitor on a journey to connect with their emotions, justify purchasing, and build trust.",
+  keywords: "marketing, landing page, template, sell, sales",
+  openGraph: {
+    title: "Marketing Landing Page Template",
+    description: "Easily convert visitors into customers with this marketing boilerplate page.  Take the visitor on a journey to connect with their emotions, justify purchasing, and build trust.",
+    type: "website",
+    url: "https://www.nicolasbolt.com/marketing-boilerplate",
+    images: [
+      {
+        url: "https://www.nicolasbolt.com/og-marketing.svg",
+        width: 1200,
+        height: 630,
+        alt: "Marketing Landing Page Social Image",
+      },
+    ],
+  },
+  alternates: {
+    canonical: './',
+  },
+};
+
 const featuresList = [
   {
     title: 'Problem Agitation',
