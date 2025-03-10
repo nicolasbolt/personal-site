@@ -13,8 +13,8 @@ export function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }) {
-  const { slug } = params
+export async function generateMetadata({ params }) {
+  const { slug } = await params
   const option = SEARCH_OPTIONS.find(opt => opt.value === slug)
 
   if (!option) {
@@ -36,8 +36,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function CategoryPage({ params }) {
-  const { slug } = params
+export default async function CategoryPage({ params }) {
+  const { slug } = await params
   const option = SEARCH_OPTIONS.find(opt => opt.value === slug)
   
   if (!option) {
