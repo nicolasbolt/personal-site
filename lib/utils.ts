@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 // Function to generate consistent tag colors
-export const getTagColorClass = (tag) => {
+export const getTagColorClass = (tag: string) => {
   // Map of tag categories to color classes
   const tagColorMap = {
     'productivity': 'bg-blue-100 text-blue-800',
