@@ -17,23 +17,6 @@ export function generateMetadata() {
   }
 }
 
-// Loading component for the Suspense fallback
-const LoadingResults = () => (
-  <div className="animate-pulse">
-    <div className="h-8 bg-muted rounded w-3/4 mx-auto mb-8"></div>
-    <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
-      {[1, 2, 3].map((i) => (
-        <div key={i} className="border rounded-lg p-6 flex flex-col">
-          <div className="w-3/4 h-40 bg-muted rounded mx-auto mb-4"></div>
-          <div className="h-6 bg-muted rounded mb-4"></div>
-          <div className="h-24 bg-muted rounded mb-4"></div>
-          <div className="h-10 bg-muted rounded mt-auto"></div>
-        </div>
-      ))}
-    </div>
-  </div>
-)
-
 // Make the page static by removing async and parameters
 export default function SearchPage() {
   return (
@@ -56,10 +39,12 @@ export default function SearchPage() {
       </nav>
       
       <div className="my-8">
-        <TemplateSearch templates={cardData} />
+        <Suspense>
+          <TemplateSearch templates={cardData} />
+        </Suspense>
       </div>
       
-      <Suspense fallback={<LoadingResults />}>
+      <Suspense>
         <QueryCardList />
       </Suspense>
     </div>

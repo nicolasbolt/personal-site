@@ -5,6 +5,7 @@ import { TemplateSearch } from '@/components/search/TemplateSearch'
 import { cardData, SEARCH_OPTIONS } from '@/constants/notionTemplates'
 import { notFound } from 'next/navigation'
 import { cn, getTagColorClass } from '@/lib/utils'
+import { Suspense } from 'react'
 
 export function generateStaticParams() {
   // Generate static pages for all category options
@@ -70,7 +71,9 @@ export default async function CategoryPage({ params }) {
       </nav>
 
       <div className="my-8">
+<Suspense>
         <TemplateSearch templates={filteredTemplates} initialQuery={option.label} />
+</Suspense>
       </div>
       
       <h1 className="text-4xl font-bold text-center my-8">

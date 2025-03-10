@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { TemplateSearch } from '@/components/search/TemplateSearch'
 import { cardData, popularCategories } from '@/constants/notionTemplates'
 import { cn, getTagColorClass } from '@/lib/utils'
+import { Suspense } from 'react'
 
 export const metadata = {
   title: "Notion Templates",
@@ -66,7 +67,9 @@ export default function Notion() {
             </nav>
             
             <div className="my-8">
+<Suspense fallback={<SearchLoading />}>
                 <TemplateSearch templates={cardData} />
+</Suspense>
             </div>
             
             <h1 className="text-4xl font-bold text-center my-8">Top Templates</h1>
