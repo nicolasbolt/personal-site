@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 // Function to generate consistent tag colors
 export const getTagColorClass = (tag: string) => {
   // Map of tag categories to color classes
-  const tagColorMap = {
+  const tagColorMap: { [key: string]: string } = {
     'productivity': 'bg-blue-100 text-blue-800',
     'goals': 'bg-emerald-100 text-emerald-800',
     'planning': 'bg-purple-100 text-purple-800',
@@ -25,5 +25,5 @@ export const getTagColorClass = (tag: string) => {
   };
 
   // Return the color class for the tag, or a default if not found
-  return tagColorMap[tag] || 'bg-gray-100 text-gray-800';
+  return tagColorMap[tag as keyof typeof tagColorMap] || 'bg-gray-100 text-gray-800';
 };
