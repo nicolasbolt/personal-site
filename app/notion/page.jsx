@@ -67,9 +67,9 @@ export default function Notion() {
             </nav>
             
             <div className="my-8">
-<Suspense fallback={<SearchLoading />}>
-                <TemplateSearch templates={cardData} />
-</Suspense>
+                <Suspense>
+                    <TemplateSearch templates={cardData} />
+                </Suspense>
             </div>
             
             <h1 className="text-4xl font-bold text-center my-8">Top Templates</h1>
