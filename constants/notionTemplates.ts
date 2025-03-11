@@ -54,6 +54,6 @@ export const cardData = [
         title: 'SaaS Marketing System',
         content: 'Stop watching your marketing efforts fall flat. This Notion template gives you the structure you need to research content ideas, task tracker for your marketing, and structure for each platform.',
         href: '/notion/saas-marketing-system',
-        tags: ['saas', 'marketing', 'content', 'productivity', 'business', 'sales', 'software']
+        tags: ['saas', 'marketing', 'content', 'productivity', 'business', 'sales', 'software', 'project-management']
     }
 ];
