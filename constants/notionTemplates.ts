@@ -48,5 +48,12 @@ export const cardData = [
         content: 'Easily organize your learning across multiple languages and track your progress with ease. Use this template to master a new language with this comprehensive language learning template.',
         href: '/notion/language-learning',
         tags: ['language-learning', 'education', 'personal-development']
+    },
+    {
+        image: '/saas-main.png',
+        title: 'SaaS Marketing System',
+        content: 'Stop watching your marketing efforts fall flat. This Notion template gives you the structure you need to research content ideas, task tracker for your marketing, and structure for each platform.',
+        href: '/notion/saas-marketing-system',
+        tags: ['saas', 'marketing', 'content', 'productivity', 'business', 'sales', 'software']
     }
 ];
