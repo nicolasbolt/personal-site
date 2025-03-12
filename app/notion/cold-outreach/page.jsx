@@ -3,6 +3,52 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+// Add metadata export for Next.js App Router
+export const metadata = {
+  title: "Cold Outreach CRM Notion Template | Nicolas Bolt",
+  description: "Improve your cold outreach processes with this free Notion template. Track leads, manage follow-ups, and close more deals with an organized system.",
+  keywords: [
+    "cold outreach",
+    "notion template",
+    "lead management",
+    "CRM template",
+    "follow-up system",
+    "sales template",
+    "free notion CRM",
+    "lead tracking"
+  ].join(", "),
+  openGraph: {
+    title: "Cold Outreach CRM Notion Template | Nicolas Bolt",
+    description: "Improve your cold outreach processes with this free Notion template. Track leads, manage follow-ups, and close more deals with an organized system.",
+    type: "website",
+    url: "https://www.nicolasbolt.com/notion/cold-outreach",
+    images: [
+      {
+        url: "https://www.nicolasbolt.com/cold-outreach.png",
+        width: 1200,
+        height: 630,
+        alt: "Cold Outreach CRM Template Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Cold Outreach CRM Notion Template",
+    description: "Track leads, manage follow-ups, and close more deals with this free Notion template",
+    images: ["https://www.nicolasbolt.com/cold-outreach.png"],
+  },
+  alternates: {
+    canonical: 'https://www.nicolasbolt.com/notion/cold-outreach',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+  },
+}
+
 const featuresList = [
   {
     title: 'Easily Increase Volume',

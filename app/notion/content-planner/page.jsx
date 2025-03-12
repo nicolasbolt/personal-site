@@ -3,6 +3,52 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
+// Add metadata export for Next.js App Router
+export const metadata = {
+  title: "Content Planner Notion Template | Nicolas Bolt",
+  description: "Stop feeling overwhelmed with content creation. Use this free Notion template to plan your content strategy, manage tasks, and grow your audience effectively.",
+  keywords: [
+    "content planner",
+    "notion template",
+    "content calendar",
+    "content strategy",
+    "content management",
+    "notion content planner",
+    "free notion template",
+    "content marketing"
+  ].join(", "),
+  openGraph: {
+    title: "Content Planner Notion Template | Nicolas Bolt",
+    description: "Stop feeling overwhelmed with content creation. Use this free Notion template to plan your content strategy, manage tasks, and grow your audience effectively.",
+    type: "website",
+    url: "https://www.nicolasbolt.com/notion/content-planner",
+    images: [
+      {
+        url: "https://www.nicolasbolt.com/content-planner.png",
+        width: 1200,
+        height: 630,
+        alt: "Content Planner Notion Template Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Content Planner Notion Template",
+    description: "Plan your content strategy, manage tasks, and grow your audience with this free Notion template",
+    images: ["https://www.nicolasbolt.com/content-planner.png"],
+  },
+  alternates: {
+    canonical: 'https://www.nicolasbolt.com/notion/content-planner',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+  },
+}
+
 const featuresList = [
   {
     title: 'Find Your Positioning',
@@ -13,17 +59,16 @@ const featuresList = [
   {
     title: 'Manage your Daily Tasks',
     description:
-      'Keep track of the things you need to do today.  Don\'t let things slip through the cracks.',
+      'Keep track of the things you need to do today. Don\'t let things slip through the cracks.',
     icon: '/goals.svg',
   },
   {
     title: 'Plan for the Week or the Month',
     description:
-      'Plan out your content into the future.  You can plan out a week in advance or go further using a calendar view.',
+      'Plan out your content into the future. You can plan out a week in advance or go further using a calendar view.',
     icon: '/checklist.svg',
   },
-  
-];
+  ];
 
 const ContentPlanner = () => {
   return (

@@ -1,20 +1,35 @@
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { TemplateSearch } from '@/components/search/TemplateSearch'
 import { cardData, SEARCH_OPTIONS } from '@/constants/notionTemplates'
 import QueryCardList from '@/components/search/QueryCardList'
 import { Suspense } from 'react'
 
-export function generateMetadata() {
-  return {
+// Create static metadata that doesn't depend on searchParams
+export const metadata = {
+  title: 'Search Notion Templates',
+  description: 'Search for templates to systemize your life and business and get more done with Notion.',
+  keywords: [
+    "notion templates",
+    "productivity",
+    "organization",
+  ].join(", "),
+  openGraph: {
     title: 'Search Notion Templates',
     description: 'Search for templates to systemize your life and business and get more done with Notion.',
-    keywords: [
-      "notion templates",
-      "productivity",
-      "organization",
-    ].filter(Boolean).join(", "),
-  }
+    type: "website",
+    url: "https://www.nicolasbolt.com/notion/search",
+  },
+  alternates: {
+    canonical: 'https://www.nicolasbolt.com/notion/search',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+    nocache: true,
+  },
 }
 
 // Make the page static by removing async and parameters
