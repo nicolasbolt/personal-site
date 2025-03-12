@@ -66,19 +66,20 @@ export default function Notion() {
                 </div>
             </nav>
             
-            <div className="my-8">
+            {/* Search component */}
+            <div className="my-8" role="search" aria-label="Search templates">
                 <Suspense>
                     <TemplateSearch templates={cardData} />
                 </Suspense>
             </div>
             
-            <h1 className="text-4xl font-bold text-center my-8">Top Templates</h1>
+            <h1 className="text-4xl font-bold text-center my-8">Top Notion Templates</h1>
             <div className='grid md:grid-cols-3 grid-cols-1 gap-4 md:mb-0 pb-4 mt-6'>
                 {cardData.map((template, index) => (
                     <Card key={index} className="flex flex-col h-full">
                         <CardHeader>
                             <img src={template.image} alt={template.title} className='rounded w-3/4 mx-auto' />
-                            <CardTitle className='text-xl pt-3'>{template.title}</CardTitle>
+                            <h2 className='text-xl font-bold pt-3'>{template.title}</h2>
                             {/* <div className="flex flex-wrap gap-1 mt-2">
                             {template.tags.map((tag, tagIndex) => {
                                 return (
