@@ -3,7 +3,7 @@ import Hero from '@/components/landing/Hero'
 import Skills from '@/components/landing/Skills'
 import ProblemAgitation from '@/components/landing/ProblemAgitation'
 import Solution from '@/components/landing/Solution'
-import Features from '@/components/landing/Features'
+import Work from '@/components/landing/Work'
 import About from '@/components/landing/About'
 import CTA from '@/components/landing/CTA'
 const LandingPage = () => {
@@ -13,7 +13,7 @@ const LandingPage = () => {
       <Skills />
       <ProblemAgitation />
       <Solution />
-      <Features />
+      <Work />
       <About />
       <CTA />
       {/* <FAQ /> */}

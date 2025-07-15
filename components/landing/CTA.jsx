@@ -14,32 +14,56 @@ import { Check } from 'lucide-react';
 // import { useSession } from 'next-auth/react';
 
 const pricingList = [
+  // {
+  //   title: 'Custom Marketing Pages',
+  //   recommended: false,
+  //   duration: 'month',
+  //   price: 29,
+  //   paymentLink:
+  //     process.env.NODE_ENV === 'development'
+  //     // stripe test price link
+  //       ? '#'
+  //     // stripe live price link
+  //       : '#',
+  //   paymentPriceId:
+  //     process.env.NODE_ENV === 'development'
+  //     // stripe test price id
+  //       ? ''
+  //     // stripe live price id
+  //       : '',
+  //   description: 'Improve your conversion rate and get more leads to turn visitors into customers!',
+  //   benefitList: [
+  //     'A proven structure that converts',
+  //     'Good website copy to convince your audience',
+  //     'SEO optimization',
+  //   ],
+  // },
+  // {
+  //   title: 'Custom Sofware as a Service (SaaS)',
+  //   recommended: false,
+  //   duration: 'year',
+  //   price: 200,
+  //   paymentLink:
+  //     process.env.NODE_ENV === 'development'
+  //     // stripe test price link
+  //       ? '#'
+  //     // stripe live price link
+  //       : '#',
+  //   paymentPriceId:
+  //     process.env.NODE_ENV === 'development'
+  //     // stripe test price id
+  //       ? ''
+  //     // stripe live price id
+  //       : '',
+  //   description: 'I can build you a custom SaaS solution for either your internal team or to sell to customers.',
+  //   benefitList: [
+  //     'Automate repetitive tasks',
+  //     'Team collaboration',
+  //     'User management',
+  //   ],
+  // },
   {
-    title: 'Custom Marketing Pages',
-    recommended: false,
-    duration: 'month',
-    price: 29,
-    paymentLink:
-      process.env.NODE_ENV === 'development'
-      // stripe test price link
-        ? '#'
-      // stripe live price link
-        : '#',
-    paymentPriceId:
-      process.env.NODE_ENV === 'development'
-      // stripe test price id
-        ? ''
-      // stripe live price id
-        : '',
-    description: 'Improve your conversion rate and get more leads to turn visitors into customers!',
-    benefitList: [
-      'A proven structure that converts',
-      'Good website copy to convince your audience',
-      'SEO optimization',
-    ],
-  },
-  {
-    title: 'Custom Sofware as a Service (SaaS)',
+    title: 'Work With Me',
     recommended: false,
     duration: 'year',
     price: 200,
@@ -55,35 +79,11 @@ const pricingList = [
         ? ''
       // stripe live price id
         : '',
-    description: 'I can build you a custom SaaS solution for either your internal team or to sell to customers.',
+    description: 'Tell me more about your business to get the process started.',
     benefitList: [
-      'Automate repetitive tasks',
-      'Team collaboration',
-      'User management',
-    ],
-  },
-  {
-    title: 'Hire Me',
-    recommended: false,
-    duration: 'year',
-    price: 200,
-    paymentLink:
-      process.env.NODE_ENV === 'development'
-      // stripe test price link
-        ? '#'
-      // stripe live price link
-        : '#',
-    paymentPriceId:
-      process.env.NODE_ENV === 'development'
-      // stripe test price id
-        ? ''
-      // stripe live price id
-        : '',
-    description: 'Do you need something more specific? Let me help you solve your problems!',
-    benefitList: [
-      'SEO optimization',
-      'User experience improvements',
-      'Performance improvements',
+      'A Site That Looks Great and Gets Leads',
+      'Done in Weeks, Not Months',
+      'Easy Updates & Complete Ownership',
     ],
   },
 ];
@@ -91,25 +91,27 @@ const pricingList = [
 const Pricing = () => {
   // const { data: session } = useSession();
   return (
-    <div className='bg-slate-50 px-3 md:px-0'>
+    <div className='bg-neutral-50 px-3 md:px-0'>
       <section id='pricing' className='container py-24 sm:py-32 mx-auto'>
         <h2 className='text-3xl md:text-4xl font-bold text-center'>
-          Get
+          Let's Get
           <span className='bg-clip-text'> Started!</span>
         </h2>
         <h3 className='text-xl text-center text-muted-foreground pt-4 pb-8'>
           {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
         reiciendis. */}
         </h3>
-        <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-8 mx-auto md:w-11/12'>
+        {/* <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-8 mx-auto md:w-11/12'> */}
+        <div className='lg:grid-cols-3 gap-8 mx-auto md:w-4/12'>
           {pricingList.map((pricing) => (
             <Card
               key={pricing.title}
-              className={
-                pricing.recommended
-                  ? 'drop-shadow-xl shadow-black/10 dark:shadow-white/10'
-                  : ''
-              }
+              // className={
+              //   pricing.recommended
+              //     ? 'drop-shadow-xl shadow-black/10 dark:shadow-white/10'
+              //     : ''
+              // }
+              className='border-2 border-customTan'
             >
               <CardHeader className='h-fit-content'>
                 <CardTitle className='text-xl flex item-center justify-between'>
@@ -143,7 +145,7 @@ const Pricing = () => {
                 <div className='space-y-4'>
                   {pricing.benefitList.map((benefit) => (
                     <span key={benefit} className='flex'>
-                      <Check className='text-green-500' />{' '}
+                      <Check className='text-customBrown' />{' '}
                       <h3 className='ml-2'>{benefit}</h3>
                     </span>
                   ))}

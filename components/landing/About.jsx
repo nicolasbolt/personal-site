@@ -24,12 +24,10 @@ const teamList = [
       // },
     ],
     content: [
-        `I have been solving tech and IT problems for over 5 years.`,
-        `I understand how difficult and confusing it can be to handle digital marketing, web development, and IT issues while also trying to run a business.`,
-        `I have built many websites for clients who have had this same problem.`,
-        `This website is a great example of what I can do for you.`,
-        `I can create a web interface that is easy to navigate and understand.`,
-        `I can create website copy that creates an emotional connection with your audience, convinces them with logic, and builds trust.`,
+        `I’ve been helping businesses fix tech headaches and build better websites for over 5 years.`,
+        `Most business owners are juggling everything: sales, operations, customers. You don’t have time to deal with a slow, outdated site.`,
+        `So I take the website off your plate. Fast, mobile-friendly, and built to bring in more calls and quote requests.`,
+        `No templates. No learning curves. Just tell me what you do, and I’ll build a site that shows it clearly, professionally, and earns trust.`,
         `Let me handle your website so you can focus on running your business.`,
       ],
   },
@@ -51,7 +49,7 @@ const About = () => {
     <section id='team' className='container py-24 sm:py-32 mx-auto'>
       <h2 className='text-3xl md:text-4xl font-bold mx-auto text-center'>
         <span className='bg-clip-text'></span>
-        Here is More About Me!{/* Crew */}
+        More About Me!{/* Crew */}
       </h2>
 
       <p className='mt-4 mb-10 text-xl text-muted-foreground'>
@@ -64,20 +62,20 @@ const About = () => {
           ({ imageUrl, name, socialNetworks, content }) => (
             <Card
               key={name}
-              className='bg-muted/50 relative mt-8 flex flex-col justify-center items-center'
+              className='bg-muted/20 relative mt-8 flex flex-col justify-center items-center border-2 border-customTan'
             >
               <CardHeader className='mt-8 flex justify-center items-center pb-2'>
                 <img
                   src={imageUrl}
                   alt={`${name}`}
-                  className='absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover'
+                  className='absolute -top-12 rounded-full w-24 h-24 aspect-square object-cover border-2 border-customTan shadow-lg'
                 />
-                <CardTitle className='text-center'>{name}</CardTitle>
+                <CardTitle className='text-center pb-8'>{name}</CardTitle>
               </CardHeader>
 
-              <CardContent className='text-center pb-2'>
+              <CardContent className='text-center pb-2 sm:w-8/12 w-full'>
                 {content.map((paragraph, index) => (
-                  <p key={index} className='mb-4'>
+                  <p key={index} className='mb-7'>
                     {paragraph}
                   </p>
                 ))}

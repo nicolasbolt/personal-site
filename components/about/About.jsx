@@ -48,7 +48,7 @@ const About = () => {
   };
 
   return (
-    // <div className='bg-slate-50'>
+    // <div className='bg-neutral-50'>
     <section id='team' className='container py-24 sm:py-32 mx-auto'>
       <h2 className='text-3xl md:text-4xl font-bold mx-auto text-center'>
         <span className='bg-clip-text'></span>

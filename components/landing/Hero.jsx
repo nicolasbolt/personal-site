@@ -5,14 +5,15 @@ import { Speech } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className='container grid lg:grid-cols-2 place-items-center pt-20 px-10 md:pt-32 gap-10 lg:max-w-[1400px] md:max-w-lg mx-auto'>
+    <div className='bgImg h-screen'>
+    <section className='container grid lg:grid-cols-2 place-items-center pt-20 md:pt-32 gap-10 mx-auto text-primary'>
       <div className='text-center lg:text-start space-y-6'>
         <main className='text-5xl md:text-6xl font-bold'>
           <h1 className='inline'>
-            <span className='inline text-purple-800 bg-clip-text'>
+            <span className='inline text-customBrown bg-clip-text'>
               Nicolas Bolt <br />
             </span>{' '}
-            Software Engineer{' '}
+            Web Developer{' '}
           </h1>{' '}
           {/* <h2 className="inline">
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
@@ -22,12 +23,12 @@ const Hero = () => {
           </h2> */}
         </main>
 
-        <p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0'>
-          I have been solving problems with software for 5 years.  I work with companies to solve challenges with software and acheive business results.
+        <p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 pb-8'>
+          I design and build fast, mobile-friendly websites that help service businesses like yours get more quote requests, phone calls, and customers.
         </p>
 
         <div className='space-y-4 md:space-y-0 space-x-4'>
-          <Button asChild size="lg">
+          <Button asChild size="lg" className='bg-primary'>
             <Link target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLScO0hCwTeIMUY7MlAf3K74_UZ7DCI8lqHNy_syXOAGACE4zbg/viewform?usp=dialog'><Speech /> Work With Me</Link>
           </Button>
 
@@ -41,7 +42,7 @@ const Hero = () => {
       {/* Hero cards sections */}
       <div className='z-10 mx-auto'>
         <img
-          src='https://res.cloudinary.com/douwvycai/image/upload/f_auto,q_auto/q0nosbkix2z9xfkqwajc'
+          src='profile.png'
           alt='Nicolas Bolt Profile Image'
           className='w-[60%] h-auto rounded-full shadow-lg mx-auto'
         />
@@ -50,6 +51,7 @@ const Hero = () => {
       {/* Shadow effect */}
       <div className='shadow'></div>
     </section>
+    </div>
   )
 }
 

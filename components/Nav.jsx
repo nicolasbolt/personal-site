@@ -18,7 +18,7 @@ import {
 
 export default function PublicNav() {
   return (
-    <header role="banner" className="site-header">
+    <>
       <div className='flex py-5 justify-between container mx-auto'>
         <NavigationMenu className='flex-grow' aria-label="Main Navigation">
           <NavigationMenuList>
@@ -26,10 +26,10 @@ export default function PublicNav() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href='/'
-                className={navigationMenuTriggerStyle()}
+                className='pl-0 pr-4 font-bold'
                 aria-label="Nicolas Bolt - Home Page"
               >
-                <span className='text-xl text-purple-800'>Nicolas Bolt</span>
+                <span className='text-xl text-customBrown'>Nicolas Bolt</span>
               </NavigationMenuLink>
             </NavigationMenuItem>
 
@@ -100,7 +100,7 @@ export default function PublicNav() {
           </NavigationMenuList>
         </NavigationMenu>
               </div>
-    </header>
+    </>
   );
 }
 
