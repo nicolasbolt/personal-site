@@ -1,60 +1,43 @@
-import React from 'react'
-import { Button, buttonVariants } from '../ui/button'
-import Link from 'next/link'
-import { Speech } from 'lucide-react'
+// 
 
-const Hero = () => {
-  return (
-    <div className='bgImg h-screen'>
-    <section className='container grid lg:grid-cols-2 place-items-center pt-20 md:pt-32 gap-10 mx-auto text-primary'>
-      <div className='text-center lg:text-start space-y-6'>
-        <main className='text-5xl md:text-6xl font-bold'>
-          <h1 className='animate__animated animate__bounce'>
-            <span className='text-customBrown'>
-              Nicolas Bolt <br />
-            </span>{' '}
-            Web Developer{' '}
-          </h1>{' '}
-          {/* <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              React
-            </span>{" "}
-            developers
-          </h2> */}
-        </main>
+'use client';
 
-        <p className='text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 pb-8 animate__animated animate__fadeInLeft'>
-          I design and build fast, mobile-friendly websites that help service businesses like yours get more quote requests, phone calls, and customers.
-        </p>
+import { motion } from 'framer-motion';
 
-        <div className='space-y-4 md:space-y-0 space-x-4'>
-          <Button asChild size="lg" className='bg-primary animate__animated animate__bounceInLeft'>
-            <Link target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLScO0hCwTeIMUY7MlAf3K74_UZ7DCI8lqHNy_syXOAGACE4zbg/viewform?usp=dialog'><Speech /> Work With Me</Link>
-          </Button>
+export default function HeroSection() {
+	return (
+		<section className="relative min-h-screen items-center justify-center overflow-hidden">
+			<div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-purple-100 opacity-50" />
+			<div className="absolute inset-0">
+				<div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+			</div>
 
-          {/* <Button variant='outline'>
-          <Link target='_blank' href='https://github.com/nicolasbolt'><ion-icon name="logo-github"></ion-icon> My Code on Github</Link>
-            
-          </Button> */}
-        </div>
-      </div>
+      <div className="relative z-10 text-center px-4 pt-48">
+				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+					<img src="/profile.png" alt="Nicolas Bolt" width={642} height={642} className="lg:w-2/12 md:w-3/12 sm:w-4/12 w-5/12 rounded-full mx-auto mb-6 shadow-lg" />
+				</motion.div>
+			</div>
 
-      {/* Hero cards sections */}
-      <div className='z-10 mx-auto'>
-        <img
-          src='profile.png'
-          alt='Nicolas Bolt Profile Image'
-          className='lg:max-w-[60%] max-w-[50%] h-auto rounded-full shadow-lg mx-auto animate__animated animate__bounceInRight'
-          width={642}
-          height={642}
-        />
-      </div>
+			<div className="relative z-10 text-center px-4">
+				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+					<h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900">Nicolas Bolt</h1>
+					<p className="text-xl md:text-2xl text-gray-600 mb-8">Web Developer for Local Service Businesses</p>
+					<div className="flex flex-wrap justify-center gap-4 text-sm">
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Web Dev and Design</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Marketing</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Mobile Optimization</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">SEO Optimization</span>
+					</div>
+				</motion.div>
+			</div>
 
-      {/* Shadow effect */}
-      <div className='shadow'></div>
-    </section>
-    </div>
-  )
+			<div className="absolute sm:bottom-10 bottom-5 left-1/2 transform -translate-x-1/2">
+				<motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }} className="text-gray-500">
+					<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+					</svg>
+				</motion.div>
+			</div>
+		</section>
+	);
 }
-
-export default Hero

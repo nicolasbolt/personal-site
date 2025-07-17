@@ -1,3 +1,6 @@
+// https://github.com/devportfoliotemplates/devportfoliotemplates/blob/main/frontend-developer-light-portfolio-template/app/components/SkillsSection.tsx
+
+
 import "./globals.css";
 import Nav from '@/components/Nav'
 import { GoogleAnalytics } from '@next/third-parties/google'

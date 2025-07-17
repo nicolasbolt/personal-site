@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <>
       <Hero />
-      <Skills />
+      {/* <Skills /> */}
       {/* <ProblemAgitation /> */}
       {/* <Solution /> */}
       <Work />
