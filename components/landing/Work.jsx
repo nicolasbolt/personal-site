@@ -46,7 +46,7 @@ const Work = () => {
                     {description}
                   </div>
                   <Link asChild href={link}>
-                    <Button variant="outline" className="mt-4">See More <ChevronRight /></Button>
+                    <Button variant="outline" className="mt-4">See the Design <ChevronRight /></Button>
                   </Link>
                 </CardDescription>
               </CardHeader>

@@ -26,7 +26,7 @@ const sponsors = [
 const MoreInfo = () => {
     return (
         <section id='sponsors' className='container mt-10 sm:mt-12 sm:mb-24 py-8 sm:px-0 px-3 mx-auto'>
-          <h2 className='text-center text-md lg:text-xl font-bold mb-2 text-primary'>
+          <h2 className='text-center text-md lg:text-xl font-bold mb-2 text-primary animate__animated animate__bounce'>
             My Skills
           </h2>
     

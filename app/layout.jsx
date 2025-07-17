@@ -1,6 +1,7 @@
 import "./globals.css";
 import Nav from '@/components/Nav'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import 'animate.css';
 
 export const metadata = {
   title: "Nicolas Bolt - Software Engineer",
@@ -21,7 +22,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: './',
+    canonical: 'https://nicolasbolt.com/',
   },
 };
 

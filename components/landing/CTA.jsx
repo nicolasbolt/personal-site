@@ -102,7 +102,7 @@ const Pricing = () => {
         reiciendis. */}
         </h3>
         {/* <div className='grid md:grid-cols-3 lg:grid-cols-3 gap-8 mx-auto md:w-11/12'> */}
-        <div className='lg:grid-cols-3 gap-8 mx-auto md:w-4/12'>
+        <div className='gap-8 mx-auto lg:w-4/12 md:w-7/12 w-full'>
           {pricingList.map((pricing) => (
             <Card
               key={pricing.title}

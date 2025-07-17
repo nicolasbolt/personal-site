@@ -11,8 +11,8 @@ const LandingPage = () => {
     <>
       <Hero />
       <Skills />
-      <ProblemAgitation />
-      <Solution />
+      {/* <ProblemAgitation /> */}
+      {/* <Solution /> */}
       <Work />
       <About />
       <CTA />
