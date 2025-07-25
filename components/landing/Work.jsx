@@ -72,17 +72,17 @@ import Link from 'next/link';
 
 const projects = [
 	{
-		title: 'StartAMA',
-		description: 'A modern dashboard with dark mode, real-time charts, and responsive design',
-		image: '/startama.png',
-    link: '/startama'
+		title: 'CleanLine Pressure Washing',
+		description: 'A demo site showcasing a high-converting website for a pressure washing company, designed to attract more customers and generate leads.',
+		image: '/Group 10.png',
+    link: '/cleanline-pressure-washing'
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
 	{
-		title: 'Da Deep Search',
-		description: 'Full-featured social platform with real-time messaging and notifications',
-		image: '/da-deep-search.png',
-    link: '/da-deep-search'
+		title: 'Summit Shield Roofing',
+		description: 'A roofing company demo website to showcase how to increase conversions and close more sales through effective design and user experience.',
+		image: '/summit-shield.png',
+    link: '/summit-shield-roofing'
 		// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
 	},
 ];
@@ -97,7 +97,7 @@ export default function Work() {
 					viewport={{ once: true }}
 					className="text-3xl font-bold mb-12 text-center text-gray-900"
 				>
-					Featured Projects
+					Featured Work
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -112,7 +112,7 @@ export default function Work() {
 						>
 							<div className="aspect-video relative overflow-hidden">
 								<img src={project.image} alt={project.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
-								<div className="absolute inset-0 bg-gradient-to-t from-white via-white/0 to-transparent transition-transform duration-300 group-hover:scale-105" />
+								{/* <div className="absolute inset-0 bg-gradient-to-t from-white via-white/0 to-transparent transition-transform duration-300 group-hover:scale-105" /> */}
 							</div>
 							<div className="p-6">
 								<h3 className="text-xl font-bold mb-2 text-gray-900">{project.title}</h3>

@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header role="banner">
-          {/* <Nav /> */}
+          <Nav />
         </header>
         
         <main role="main" id="main-content">
