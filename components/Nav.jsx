@@ -154,13 +154,13 @@ export default function PublicNav() {
                   Services
                 </Link>
                 
-                <Link
+                {/* <Link
                   href="/about"
                   className="text-lg font-medium hover:text-purple-700 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   About
-                </Link>
+                </Link> */}
                 
                 <div className="pt-4">
                   <motion.a
