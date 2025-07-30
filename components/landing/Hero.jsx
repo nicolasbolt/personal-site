@@ -13,13 +13,13 @@ export default function HeroSection() {
 			</div>
 
       <div className="relative z-10 text-center px-4 pt-48">
-				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
 					<img src="/profile.png" alt="Nicolas Bolt" width={642} height={642} className="lg:w-2/12 md:w-3/12 sm:w-4/12 w-5/12 rounded-full mx-auto mb-6 shadow-lg" />
 				</motion.div>
 			</div>
 
 			<div className="relative z-10 text-center px-4">
-				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
 					<h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900">Nicolas Bolt</h1>
 					<p className="text-xl md:text-2xl text-gray-600 mb-8">Web Developer for Local Service Businesses</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm">

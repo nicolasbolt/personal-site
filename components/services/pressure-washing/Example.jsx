@@ -1,37 +1,37 @@
+
 'use client';
 
 import { motion } from 'framer-motion';
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
-const services = [
+const projects = [
 	{
-		title: 'Pressure Washing Web Design in Indianapolis',
-		description: 'I build high-converting websites for pressure washing companies in the Indianapolis area to help them attract more customers and generate leads.',
+		title: 'CleanLine Pressure Washing',
+		description: 'A demo site showcasing a high-converting website for a pressure washing company, designed to attract more customers and generate leads.',
 		image: '/Group 10.png',
-    	link: '/services/pressure-washing-web-design-indianapolis',
-		buttonText: 'See My Pressure Washing Web Design',
+    link: '/cleanline-pressure-washing'
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
-	// {
-	// 	title: 'Roofing Web Design in Indianapolis',
-	// 	description: 'I build high-converting websites for roofing companies in the Indianapolis area to help them attract more customers and generate leads.',
-	// 	image: '/summit-shield.png',
-    // 	link: '/services/roofing-web-design-indianapolis',
-	// 	buttonText: 'See My Roofing Web Design',
-	// 	// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
-	// },
+
 ];
 
-export default function ServiceList() {
+export default function Example() {
 	return (
-		<section className="container max-w-[1160px] mx-auto py-20">
+		<section className="py-24 container max-w-[1160px] mx-auto">
 			<div className="mx-auto">
-				
+				<motion.h2
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					className="text-3xl font-bold mb-12 text-center text-gray-900"
+				>
+					Checkout an Example of My Work
+				</motion.h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-					{services.map((project, index) => (
+				<div className="grid grid-cols-1 gap-8 md:w-6/12 mx-auto">
+					{projects.map((project, index) => (
 						<motion.div
 							key={index}
 							initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export default function ServiceList() {
                 
                   <Button asChild className="mt-4" variant='outline'>
                     <Link href={`${project.link}`}>
-                      {project.buttonText}
+                      View Project
                       <ChevronRight className='ml-2' />
                     </Link>
                   </Button>

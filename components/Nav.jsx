@@ -56,9 +56,9 @@ export default function PublicNav() {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center py-8">
+    <nav className="container max-w-[1160px] mx-auto fixed top-0 left-0 right-0 z-50 flex justify-center py-8">
       <div
-        className="sm:w-[65vw] lg:w-[35vw] w-[95vw] bg-white/70 backdrop-blur-sm rounded-full shadow-md py-4 flex items-center px-6 md:px-12"
+        className=" w-full bg-white/70 backdrop-blur-sm rounded-full shadow-md py-4 flex items-center px-6 md:px-12"
         aria-label="Main Navigation"
       >
         <div className="flex items-center justify-between w-full">
@@ -84,7 +84,7 @@ export default function PublicNav() {
               </Link>
             </div>
 
-            {/* <div>
+            {/* <div className='mr-8'>
               <Link
                 href="/about"
                 className="hover:text-purple-700 transition-colors"

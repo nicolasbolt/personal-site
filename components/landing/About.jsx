@@ -155,8 +155,8 @@ export default function About() {
   };
 
 	return (
-		<section className="py-20 px-4 bg-gray-50">
-			<div className="max-w-6xl mx-auto">
+		<section className="py-24 bg-gray-50">
+			<div className="container max-w-[1160px] mx-auto ">
 				<motion.h2
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
@@ -171,7 +171,7 @@ export default function About() {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ delay: 0.2 }}
-							className="group relative bg-white rounded-xl backdrop-blur-sm border border-gray-200 shadow-lg lg:w-5/12 md:w-7/12 w-full mx-auto"
+							className="group relative bg-white rounded-xl backdrop-blur-sm border border-gray-200 shadow-lg lg:w-8/12 md:w-10/12 w-full mx-auto"
 						>
 							<div className="p-6">
 								{teamList.map(

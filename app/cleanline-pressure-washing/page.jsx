@@ -4,7 +4,8 @@ import React from 'react'
 import { useRouter } from 'next/navigation'
 import Pricing from '@/components/landing/CTA';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 function DaDeepSearch() {
     const router = useRouter();
@@ -12,7 +13,7 @@ function DaDeepSearch() {
     return (
         <>
         <div className="bgImg min-h-screen">
-            <div className="container mx-auto pt-16 pb-24 max-w-4xl mx-auto px-6 py-24">
+            <div className="container mx-auto pt-16 pb-24 max-w-4xl mx-auto py-24">
                 <Button
                     variant="outline"
                     onClick={() => router.back()}
@@ -29,6 +30,8 @@ function DaDeepSearch() {
                         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 pb-8">
                             A website built to showcase a high-converting page for a pressure washing company, designed to attract more customers and generate leads.
                         </p>
+
+                        <Button asChild><Link target='_blank' href="https://cleanline-31ec1e.webflow.io/">View Live Site <ArrowRight /></Link></Button>
                     </div>
                     
                     <div className="z-10 mx-auto">
