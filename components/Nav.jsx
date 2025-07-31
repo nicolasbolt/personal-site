@@ -80,18 +80,18 @@ export default function PublicNav() {
                 href="/services"
                 className="hover:text-purple-700 transition-colors"
               >
-                Services
+                What I Do
               </Link>
             </div>
 
-            {/* <div className='mr-8'>
+            <div className='mr-8'>
               <Link
                 href="/about"
                 className="hover:text-purple-700 transition-colors"
               >
-                About
+                About Me
               </Link>
-            </div> */}
+            </div>
 
             <div>
               <motion.a

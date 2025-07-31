@@ -10,21 +10,16 @@ export default function Hero() {
 				<div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
 			</div>
 
-      <div className="relative z-10 text-center px-4 pt-48">
-				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
-					<img src="/profile.jpg" alt="Nicolas Bolt" width={642} height={642} className="lg:w-2/12 md:w-3/12 sm:w-4/12 w-5/12 rounded-full mx-auto mb-6 shadow-lg" />
-				</motion.div>
-			</div>
-
-			<div className="relative z-10 text-center px-4">
+			<div className="container mx-auto max-w-[1160px] relative z-10 text-center px-12 pt-48">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-					<h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900">More About My Experience</h1>
-					<p className="text-xl md:text-2xl text-gray-600 mb-8">This is How I Built My Skills to Help Local Businesses</p>
+					<h1 className="text-5xl md:text-7xl font-bold mb-6 text-slate-900">Roofing Web Design in Indianapolis</h1>
+					<p className="text-xl md:text-2xl text-gray-600 mb-8 px-16 pt-8">I build high-converting websites for roofing companies in the Indianapolis area to help them attract more customers and generate leads.</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm">
-						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">5+ Years of Experience</span>
-						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Web Design</span>
-						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Enterprise Software</span>
-						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Small Companies</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Indianapolis</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Brownsburg</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Avon</span>
+						<span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Westfield</span>
+                        <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full border border-blue-200">Carmel</span>
 					</div>
 				</motion.div>
 			</div>

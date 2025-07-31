@@ -12,7 +12,7 @@ export default function ServiceHeroSectionMain() {
 
       <div className="relative z-10 text-center px-4 pt-48">
 				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
-					<img src="/profile.png" alt="Nicolas Bolt" width={642} height={642} className="lg:w-2/12 md:w-3/12 sm:w-4/12 w-5/12 rounded-full mx-auto mb-6 shadow-lg" />
+					<img src="/profile.jpg" alt="Nicolas Bolt" width={642} height={642} className="lg:w-2/12 md:w-3/12 sm:w-4/12 w-5/12 rounded-full mx-auto mb-6 shadow-lg" />
 				</motion.div>
 			</div>
 

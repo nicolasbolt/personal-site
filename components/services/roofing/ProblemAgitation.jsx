@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 const projects = [
 	{
-		title: 'Locally Optimized, Mobile-First, and SEO-Ready',
-		description: 'We design pressure washing landing pages with one goal: get more people to call, message, or book. Every element from the headline to the call-to-action is built to convert visitors into leads. No fluff, no distractions, just clean design that works.',
-		image: '/undraw_search-engines.svg',
+		title: 'You\'re Paying for Traffic That Doesn’t Convert',
+		description: 'Whether it’s SEO, Google Ads, or referrals you\'re sending people to a site that isn’t built to get them to act. No clear calls-to-action? No fast loading? No mobile layout? That traffic is wasted.',
+		image: '/access-denied.svg',
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
 	// {
@@ -19,14 +19,14 @@ const projects = [
 	// 	// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
 	// },
     {
-		title: 'Conversion-Focused Landing Pages That Book You More Jobs',
-		description: 'Your landing page is built to show up in local Google searches and perform well on every device. Whether someone\'s on a phone or desktop, your page loads fast, looks great, and helps them take action immediately. That means more visibility and more trust.',
-		image: '/undraw_growth-curve.svg',
+		title: 'Slow, Cluttered Sites Kill Urgency',
+		description: 'People searching for roof repairs or replacements want quick answers. If your site is slow, cluttered, or unclear, they’ll bounce in seconds and book with the next roofer who makes it easy.',
+		image: '/undraw_questions.svg',
 		// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
 	},
 ];
 
-export default function Solution() {
+export default function ProblemAgitation() {
 	return (
 		<section className="py-24 container max-w-[1160px] mx-auto">
 			<div className="mx-auto">
@@ -36,7 +36,7 @@ export default function Solution() {
 					viewport={{ once: true }}
 					className="text-3xl font-bold mb-12 text-center text-gray-900"
 				>
-					Custom Landing Pages That Turn Clicks into Booked Jobs
+					Losing Leads? Your Website Might Be the Problem.
 				</motion.h2>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">

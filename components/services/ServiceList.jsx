@@ -14,14 +14,14 @@ const services = [
 		buttonText: 'See My Pressure Washing Web Design',
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
-	// {
-	// 	title: 'Roofing Web Design in Indianapolis',
-	// 	description: 'I build high-converting websites for roofing companies in the Indianapolis area to help them attract more customers and generate leads.',
-	// 	image: '/summit-shield.png',
-    // 	link: '/services/roofing-web-design-indianapolis',
-	// 	buttonText: 'See My Roofing Web Design',
-	// 	// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
-	// },
+	{
+		title: 'Roofing Web Design in Indianapolis',
+		description: 'I build high-converting websites for roofing companies in the Indianapolis area to help them attract more customers and generate leads.',
+		image: '/summit-shield.png',
+    	link: '/services/roofing-web-design-indianapolis',
+		buttonText: 'See My Roofing Web Design',
+		// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
+	},
 ];
 
 export default function ServiceList() {
