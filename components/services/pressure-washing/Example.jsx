@@ -10,7 +10,7 @@ const projects = [
 	{
 		title: 'CleanLine Pressure Washing',
 		description: 'A demo site showcasing a high-converting website for a pressure washing company, designed to attract more customers and generate leads.',
-		image: '/Group 10.png',
+		image: '/Group 10.avif',
     link: '/cleanline-pressure-washing'
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},

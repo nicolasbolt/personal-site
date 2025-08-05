@@ -36,7 +36,7 @@ function DaDeepSearch() {
                     
                     <div className="z-10 mx-auto">
                         <img
-                            src="/cleanline.png"
+                            src="/cleanline.avif"
                             alt="CleanLine Pressure Washing Landing Page Preview"
                             className="w-full h-auto rounded-lg shadow-lg"
                         />

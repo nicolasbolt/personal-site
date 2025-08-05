@@ -16,7 +16,7 @@ const projects = [
 	// {
 	// 	title: 'You’re Invisible to Local Searchers',
 	// 	description: 'A roofing company demo website to showcase how to increase conversions and close more sales through effective design and user experience.',
-	// 	image: '/summit-shield.png',
+	// 	image: '/summit-shield.avif',
 	// 	// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
 	// },
     {

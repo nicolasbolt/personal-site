@@ -10,7 +10,7 @@ const projects = [
 	{
 		title: 'Summit Shield Roofing',
 		description: 'A demo site showcasing a high-converting website for a roofing company, designed to attract more customers and generate leads.',
-		image: '/summit-shield.png',
+		image: '/summit-shield.avif',
     link: '/summit-shield-roofing'
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
