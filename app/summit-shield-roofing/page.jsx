@@ -33,7 +33,7 @@ function SummitShield() {
                     
                     <div className="z-10 mx-auto">
                         <img
-                            src="/summit-shield-full.png"
+                            src="/summit-shield-full.jpg"
                             alt="Summit Shield Roofing Landing Page Preview"
                             className="w-full h-auto rounded-lg shadow-lg"
                         />
