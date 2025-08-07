@@ -4,7 +4,8 @@ import React from 'react'
 import { useRouter } from 'next/navigation'
 import Pricing from '@/components/landing/CTA';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 function SummitShield() {
     const router = useRouter();
@@ -29,6 +30,9 @@ function SummitShield() {
                         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0 pb-8">
                             A roofing company demo website to showcase how to increase conversions and close more sales through effective design and user experience.
                         </p>
+
+                        <Button asChild><Link target='_blank' href="https://summit-shield-roofing.webflow.io/">View Live Site <ArrowRight /></Link></Button>
+
                     </div>
                     
                     <div className="z-10 mx-auto">
