@@ -29,7 +29,7 @@ const projects = [
 export default function ProblemAgitation() {
 	return (
 		<section className="py-24 container max-w-[1160px] mx-auto">
-			<div className="mx-auto">
+			<div className="mx-auto w-full w-11/12">
 				<motion.h2
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}

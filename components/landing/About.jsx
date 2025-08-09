@@ -156,7 +156,7 @@ export default function About() {
 
 	return (
 		<section className="py-24 bg-gray-50">
-			<div className="container max-w-[1160px] mx-auto ">
+			<div className="container max-w-[1160px] mx-auto sm:w-full w-11/12">
 				<motion.h2
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}

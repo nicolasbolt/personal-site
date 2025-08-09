@@ -27,7 +27,7 @@ const services = [
 export default function ServiceList() {
 	return (
 		<section className="container max-w-[1160px] mx-auto py-20">
-			<div className="mx-auto">
+			<div className="mx-auto sm:w-full w-11/12">
 				
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">

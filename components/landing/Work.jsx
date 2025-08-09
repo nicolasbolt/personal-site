@@ -36,7 +36,7 @@ export default function Work() {
 					Featured Work
 				</motion.h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:w-full w-11/12 sm:mx-0 mx-auto">
 					{projects.map((project, index) => (
 						<motion.div
 							key={index}

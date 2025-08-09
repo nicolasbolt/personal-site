@@ -9,13 +9,13 @@ const projects = [
 	{
 		title: 'State Farm',
 		description: 'I have been working at State Farm for about 2 1/2 years now. I have built Enterprise software using Python and Javascript.',
-		image: '/state_farm_logo.jpeg',
+		image: '/state_farm_logo.avif',
 		// tags: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
 	},
 	{
 		title: 'myhELO',
 		description: 'I worked at myhELO for about 2 1/2 years. I built full-stack software solutions and I designed their website to improve marketing efforts.',
-		image: '/myhelo_logo.jpeg',
+		image: '/myhelo_logo.avif',
 		// tags: ['Next.js', 'Socket.io', 'Prisma', 'TailwindCSS'],
 	},
 ];

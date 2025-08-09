@@ -5,6 +5,7 @@ import "./globals.css";
 import Nav from '@/components/Nav'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import 'animate.css';
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: "Nicolas Bolt - Software Engineer",
@@ -46,7 +47,8 @@ export default function RootLayout({ children }) {
             <p className="text-center text-muted-foreground">© {new Date().getFullYear()} Nicolas Bolt. All rights reserved.</p>
           </div>
         </footer> */}
-        
+        <Footer />
+
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <GoogleAnalytics gaId={process.env.GA_ANALYTICS_ID} />
