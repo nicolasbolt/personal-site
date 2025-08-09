@@ -12,7 +12,7 @@ export default function Hero() {
 
             <div className="relative z-10 text-center px-4 pt-48 pb-12">
                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
-                    <img src="/indianapolis.jpg" alt="Indianapolis" className="lg:w-4/12 md:w-3/12 w-10/12 rounded-lg mx-auto mb-6 shadow-lg" />
+                    <img src="/indianapolis.avif" alt="Indianapolis" className="lg:w-4/12 md:w-3/12 w-10/12 rounded-lg mx-auto mb-6 shadow-lg" />
                 </motion.div>
             </div>
 

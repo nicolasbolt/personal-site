@@ -20,7 +20,7 @@ export default function WhyMe() {
                         <div className="relative">
                             <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl blur-xl opacity-30"></div>
                             <img 
-                                src="/indy.jpg" 
+                                src="/indy.avif" 
                                 alt="Indianapolis skyline - Local Web Design Services" 
                                 className="relative w-full sm:mx-0 mx-auto sm:max-w-md max-w-xs h-auto rounded-xl shadow-2xl border border-gray-200" 
                             />
